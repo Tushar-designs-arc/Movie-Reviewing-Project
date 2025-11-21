@@ -1,0 +1,15 @@
+export const ROUTES = {
+  LOGIN: "/login",
+  DASHBOARD: "/",
+  MOVIES: "/movies",
+  CREATE_MOVIE: "/movies/new",
+  EDIT_MOVIE: (id) => `/movies/${id}/edit`,
+  USERS: "/users",
+  USER_DETAILS: (id) => `/users/${id}`,
+  REVIEWS: "/reviews",
+  REVIEW_DETAILS: (id) => `/reviews/${id}`,
+  REPORTS: "/reports",
+  REPORT_DETAILS: (id) => `/reports/${id}`,
+  ANALYTICS: "/analytics",
+  SETTINGS: "/settings",
+};

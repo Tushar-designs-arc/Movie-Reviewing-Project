@@ -1,0 +1,5 @@
+@layer utilities {
+  .poster-strip::-webkit-scrollbar {
+    height: 0;
+  }
+}
