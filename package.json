@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "client": "npm --prefix Frontend run dev",
+    "server": "npm --prefix Backend run dev",
+    "build": "npm --prefix Frontend run build",
+    "start": "npm --prefix Backend start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.3"
+  }
+}
