@@ -1,23 +1,19 @@
-# MovieVerse Admin
+# MovieVerse Administration
 
-Protected React operations console for movies, users, reviews, reports, analytics and settings.
+This document outlines a secure React application for a management console that focuses on effective administration of movies, users, reviews, reports, analytics, and application settings.
 
-## Stack and commands
+## Technical Stack and Commands
 
-React, Vite, React Router, Axios, Tailwind CSS and Lucide.
+The application is built with React and Vite, using React Router for navigation, Axios for data fetching, Tailwind CSS for styling, and Lucide for icons.
 
 ```bash
-npm install
-npm run dev
-npm run lint
-npm run build
-npm run preview
+npm install           # Install dependencies
+npm run dev           # Start development server
+npm run lint          # Lint the codebase
+npm run build         # Build for production
+npm run preview       # Preview the production build
 ```
 
-## Architecture
+## System Architecture
 
-`AdminRoute` authorizes the session before rendering `AdminLayout`. Feature API modules keep request concerns outside table and page components. `context` provides authentication, theme and toast state; `components/common` standardizes dialogs and loading/error states.
-
-## Environment and deployment
-
-Use the API origin configured by `src/config/config.js` (normally `VITE_API_ORIGIN`). Build `dist/` with production variables, deploy it with SPA fallback, and allow the admin origin in server CORS. Use HTTPS and never expose secrets in frontend variables.
+The `AdminRoute` component is critical for session authorization before rendering the `AdminLayout`. API modules encapsulate request-handling logic separate from UI table and page components. The `context` provider manages authentication state, theme preferences, and toast notifications, while the `components/common` directory establishes standard practices for dialogs, loading indicators, and error handling.
